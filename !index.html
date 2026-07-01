@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>재미있는 그림들</title>
+
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+    }
+
+    body{
+        background-color:skyblue;
+        font-family:Arial, sans-serif;
+    }
+
+    /* 전체 화면 */
+    .container{
+        width:100vw;
+        height:100vh;
+        border:8px solid red;
+        display:flex;
+        flex-direction:column;
+    }
+
+    /* 상단 제목 */
+    .header{
+        text-align:center;
+        font-family:"궁서", "궁서체", "Gungsuh", serif;
+        font-size:48px;
+        font-weight:bold;
+        color:navy;
+        padding:25px 0;
+        text-shadow:2px 2px 4px white;
+    }
+
+    /* 이미지 영역 */
+    .gallery{
+        flex:1;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        gap:40px;
+        padding:20px;
+        flex-wrap:wrap;
+    }
+
+    /* 이미지 */
+    .gallery img{
+        width:280px;
+        height:auto;
+        border:5px solid white;
+        border-radius:15px;
+        box-shadow:0 0 15px rgba(0,0,0,0.4);
+        transition:transform 0.3s;
+    }
+
+    .gallery img:hover{
+        transform:scale(1.05);
+    }
+
+    /* 하단 이름 */
+    .footer{
+        text-align:center;
+        font-size:34px;
+        font-weight:bold;
+        color:green;
+        padding:20px;
+        text-shadow:2px 2px 3px white;
+    }
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- 상단 제목 -->
+    <div class="header">
+        재미있는 그림들
+    </div>
+
+    <!-- 가운데 이미지 -->
+    <div class="gallery">
+
+        <img src="https://raw.githubusercontent.com/kimhyunnkhan-web/AX/main/2.png" alt="2.png">
+
+        <img src="https://raw.githubusercontent.com/kimhyunnkhan-web/AX/main/3.png" alt="3.png">
+
+        <img src="https://raw.githubusercontent.com/kimhyunnkhan-web/AX/main/4.png" alt="4.png">
+
+    </div>
+
+    <!-- 하단 이름 -->
+    <div class="footer">
+        kim hyunn khan
+    </div>
+
+</div>
+
+</body>
+</html>
